@@ -20,7 +20,7 @@
 </div>
 
 <div>
-<img src="https://user-images.githubusercontent.com/87022711/180661348-602afe31-96a5-4416-8bf5-32b946ee9ff6.png" title="lamp" alt="spilampder" width="80" />&nbsp;
+<img src="https://user-images.githubusercontent.com/87022711/180661348-602afe31-96a5-4416-8bf5-32b946ee9ff6.png" title="lamp" alt="spilampder" width="60" />&nbsp;
 - лампа. Включается свет. На <code>:hover</code> происходит замена картинок
 </div>
 
