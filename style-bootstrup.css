@@ -1,0 +1,279 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Just+Another+Hand");
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url(img/BG_MM.jpg) center no-repeat fixed;
+    background-size: cover;
+    font-family: 'Frijole', cursive;
+    }
+
+.Lamp img {
+   height: 60%;
+   margin: 0 auto;
+   top: 36%;
+   position: absolute;
+   right: 0;
+}
+
+
+
+.img-fluid {
+    max-width: 85%;
+    height: auto;
+}
+
+/* Р—РђР“РћР›РћР’РћРљ */
+
+.login{
+    padding-right: calc(var(--bs-gutter-x)/ .2);
+}
+
+.navbar {
+    background-image: url(img/wood.jpg);
+    font-size: 35px;
+    color: #e7d9d1;
+    font-family: 'Frijole', cursive;
+}
+
+.navbar-brand {
+    background-image: url(img/wood.jpg);
+    font-size: 35px;
+    color: #e7d9d1;
+    font-family: 'Frijole', cursive;
+    }
+
+.navbar-light .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: .5rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	opacity: .7;
+}
+
+.navbar-light .navbar-toggler {
+    padding-bottom: 2rem;
+}
+
+
+.navbar-light .navbar-brand {
+    color: #fcf7f7;
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: rgba(0,0,0,.1);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+/* ------------LAMP------------ *//* 
+.Lamp {
+    /* position: absolute; */
+   margin-top: -28%;
+}*/
+
+
+/* ------------FISH------------ */
+.fish {
+    height: 80%;
+    width: 55%;
+    transform: scale(0.45);
+    float: left;
+    top: -5%;
+    margin-left: 42%;
+    position: absolute;
+    z-index: 10010;	
+ }
+ 
+ .fishes {
+     height: 100%;
+     width: 100%;
+     background: url("/img/Fish/Fish1.PNG") no-repeat;
+     position: absolute;
+     z-index: 10012;
+     cursor: pointer;
+ }
+ .fishes:hover {
+     background: url("/img/Fish/Fish2.PNG") no-repeat;
+     animation-name: movingFish;
+     animation-duration: 130ms;
+     animation-iteration-count: 35;
+     animation-direction: alternate-reverse;
+ }
+ @-webkit-keyframes movingFish {
+     0% {
+     background: url("/img/Fish/Fish1.PNG") no-repeat;
+     animation-timing-function: ease-in;
+     }
+     
+     100% {
+     background: url("/img/Fish/Fish2.PNG") no-repeat;
+     animation-timing-function: ease-in;
+     overflow: hidden;
+     }  
+ }
+ 
+
+.spider img{
+    width: 300px;
+    cursor: pointer;
+	top: 10%;
+	position: absolute;    
+	z-index: 10010;
+}
+
+.spider img:hover {
+    animation-name: movingSpider;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+   }
+  
+  @-webkit-keyframes movingSpider {
+      0% {
+      transform: translateY(30px);
+      animation-timing-function: ease-in;
+      }
+      
+      100% {
+      transform: translateY(500px);
+      animation-timing-function: ease-in;
+      overflow: hidden;
+      }  
+  }
+
+  .ghost {
+	width: 100%;
+	top: 90%;
+	
+	opacity: .75;
+	overflow: hidden;
+	
+	position: absolute;
+   	z-index: 10003;
+}
+
+.Copy {
+    color: #000000;
+    font-family: 'Frijole', cursive;
+    margin-top: 35%;
+}
+
+
+/* РђР”РђРџРўРђР¦РРЇ */
+
+@media (max-width: 1750px) {
+.FF {
+    margin-top: 3%!important;
+}
+}
+
+
+
+@media (max-width: 1627px) {
+    .Lamp {
+        margin-top: -19%;
+    }
+    .ghost {
+        margin-top: 6%!important;
+    }
+    .del {
+    display: none; 
+}
+.delmd {
+    display: none; 
+}
+    }
+
+@media (max-width: 1398px) {
+.del {
+    display: none; 
+}
+.delmd {
+    display: none; 
+}
+.fish {
+    transform: scale(0.35);
+}
+}
+
+@media (max-width: 1200px) {
+.fish {
+    width: 60%; 
+}
+.rightweb {
+	margin-left: auto; 
+}
+.secondrow {
+	margin-top: 6%; 
+
+}
+
+}
+@media (max-width: 1080px) {
+.Lamp {
+    margin-top: -10%;
+}
+}
+
+
+
+@media (max-width: 992px) {
+.delmd {
+    display: none; 
+}
+}
+
+
+@media (min-width: 990px) {
+.navbar-nav {
+    flex-direction: row;
+}
+}
+
+
+@media (max-width: 750px) {
+.login{
+    padding-right: 0;
+}
+}
+
+@media (min-width: 750px) {
+    .login{
+        padding-right: 0;
+    }
+    }
+
+@media (max-width: 632px) {
+.login{
+    font-size: 70%;
+    padding-right: 0;
+}
+}
+
+@media (max-width: 536px) {
+
+.login{
+    font-size: 60%;
+    padding-right: 0;
+    }
+
+.navbar-nav {
+    display: none;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+}

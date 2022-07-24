@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Frijole&display=swap" rel="stylesheet">
+    
+    <title>LilysPictures</title>
+
+</head>
+<body>
+  
+  <!-- Header (wood) -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+        <div class="navbar-nav">
+          <a class="nav-link" href="https://www.instagram.com/accounts/login/"> <img src="img/IN2.png" alt="" width="55" height="55" class="d-inline-block align-top"> </a>
+          <a class="nav-link" href="https://vk.com/lilyspictures"><img src="img/BK.png" alt="" width="55" height="55" class="d-inline-block align-top"></a>
+          <a class="nav-link" href="https://www.youtube.com/user/LilysPictures/videos"> <img src="img/Y.png" alt="" width="55" height="55" class="d-inline-block align-top"></a>
+        </div>
+       
+         <div class="login">LilysPictures</div>
+           
+    </div>
+    </nav>
+
+<div class="Lamp">
+  <img src="/img/Lamp00.png" onmouseover="this.src='/img/Lamp01.png'" onmouseout="this.src='/img/Lamp00.png'">
+</div>
+
+<!-- Ghost -->
+<div class="ghost">	
+  <img src="/img/ghost.png" alt="ghost" width="200px" id="idGhost">	
+</div>	
+
+ <!-- Main content -->
+
+<div class="firstrow">
+
+	<div class="webleft">
+		<img src="img/left_web.png" class='web'>
+	</div>
+
+	<div class="webright">
+		<img src="img/right_web.png">
+	</div>
+
+	<a href="/OsyaBook.html" title="Book about Osya" target="_blank"><img src="/img2/Osya.png" onmouseover="this.src='/img2/img3_hover/Osya_h.png'" onmouseout="this.src='/img2/Osya.png'"></a>
+	<a href="/Video3.html" title="Video" target="_blank"><img  src="img2/Video.png" onmouseover="this.src='/img2/img3_hover/Video_h.png'" onmouseout="this.src='img2/Video.png'"></a>
+	<img src="img/Fish/Fish1.PNG" id='rotator'>
+	<!-- <img src="img/Fish/Fish1.PNG" id="rotator" onclick="viewImages(this);">-->
+</div>
+
+	 
+<div class="secondrow">
+	<a href="/Portraits.html" title=""><img src="img2/Portraits.png" onmouseover="this.src='/img2/img3_hover/Portraits_h.png'" onmouseout="this.src='/img2/Portraits.png'"></a>
+	<a href="/GAME/index.html" title=""><img  src="img2/Robot.png" onmouseover="this.src='/img2/img3_hover/Robot_h.png'" onmouseout="this.src='/img2/Robot.png'"> </a>
+	<a><img  src="img2/Hill.png" onmouseover="this.src='/img2/Hill_h.png'" onmouseout="this.src='/img2/Hill.png'"></a>
+	<a href="/T-shirts.html" title=""><img  src="img2/T-S.png" onmouseover="this.src='/img2/img3_hover/T-S_h.png'" onmouseout="this.src='/img2/T-S.png'"></a>
+	<a href="/Excell.html" title=""><img  src="img2/Ex.png" onmouseover="this.src='/img2/img3_hover/Ex_h.png'" onmouseout="this.src='/img2/Ex.png'"> </a>
+</div>
+
+<div class="thirdrow">
+	<a><img src="img2/Youtube.png"onmouseover="this.src='/img2/Youtube_hh.png'" onmouseout="this.src='/img2/Youtube.png'"></a>
+	<a href="/Pics.html" title=""><img src="img2/Pics.png" onmouseover="this.src='/img2/img3_hover/Pics_h.png'" onmouseout="this.src='/img2/Pics.png'"></a>
+	<a href="/Sweet.html" title=""><img src="img2/Sweets.png" onmouseover="this.src='/img2/img3_hover/Sweets_h.png'" onmouseout="this.src='/img2/Sweets.png'"></a>
+</div>
+
+
+<!-- 2.3. Spider --> 
+<div class="box">
+	<div class="spider">
+		<img src="/img/spider.png" alt="" title="spider">
+	</div>
+</div>
+
+ <div class="position-absolute bottom-180 start-0 Copy"> © 2020-2021 Lilyspictures </div>
+  
+ <!-- JavaScript Bundle with Popper.js -->
+
+
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+  <script>
+  var topOffset = 0;
+  var traffic = function(){
+  $("#idGhost").offset({left:topOffset});
+  topOffset++;
+  if (topOffset>2150){
+    topOffset=0;
+  }
+  }
+  setInterval(traffic, 10);
+  </script>	
+ 
+
+
+ <script>
+ 
+var images = new Array();
+var i = 0;
+ 
+images[0] = 'img/Fish/Fish1.PNG';
+images[1] = 'img/Fish/Fish2.PNG';
+ 
+function viewImages() {
+    document.getElementById('rotator').src = images[i];
+    i++;
+    if (i == images.length) {
+        i = 0;
+    }
+    setTimeout("viewImages()",400);
+}
+</script>
+<script> viewImages(); </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+</body>
+</html>
