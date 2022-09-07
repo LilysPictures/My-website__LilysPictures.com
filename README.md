@@ -8,7 +8,7 @@
 </p>
 
 
-<h2>Анимирвоаные элементы сайта:</h2>
+<h2>Анимированые элементы сайта:</h2>
 <div >
 <img src="https://user-images.githubusercontent.com/87022711/180660636-e2b6fd4c-95c1-4a85-b1d9-142478fba2b0.png" title="spider" alt="spider" width="80" />&nbsp;
  - паук. Двигается на чистом CSS. При ховере срабатывает <code> @-webkit-keyframes </code> <code>transform</code> <code>animation-timing-function</code>
