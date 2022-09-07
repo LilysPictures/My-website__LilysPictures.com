@@ -33,3 +33,5 @@
 <img src="https://user-images.githubusercontent.com/87022711/180661590-b05d39a3-feca-408d-a0e8-e4e95aa46db5.png" title="lamp" alt="spilampder" width="80" />&nbsp;
 - картины. Переход по ссылке на следующую страницу.
 </div>
+<div> и так далее...</div>
+
